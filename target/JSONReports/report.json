@@ -1,0 +1,162 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9951755100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T00:55:11.431Z",
+        "line": 8,
+        "name": "Login as a librarian",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;login-as-a-librarian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 624999600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user logs in as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2533733500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Dashboard should be displayed",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.Dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@librarian"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6029747700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T00:55:24.756Z",
+        "line": 13,
+        "name": "Login as a student",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;login-as-a-student",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 438904900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user log in as a \"student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_log_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1663351100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Books should be displayed",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.Books_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Student"
+          }
+        ]
+      }
+    ],
+    "name": "As user I want to be able to login under different roles",
+    "description": "",
+    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
