@@ -1,15 +1,14 @@
 package com.cybertek.library.step_definitions;
 
-import com.cybertek.library.pages.LibrarianPage;
+import com.cybertek.library.pages.LibrarianBookPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 public class LibrarianUserModuleDefinitions {
 
-    LibrarianPage librarianPage = new LibrarianPage();
+    LibrarianBookPage librarianPage = new LibrarianBookPage();
 
     @Then("librarian user click on User button on the header")
     public void librarianUserClickOnUserButtonOnTheHeader() {
