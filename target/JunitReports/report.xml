@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.83">
-    <testcase classname="User Story1 – As a Librarian, I should be able to manage Users:" name="User should be able to see the grid with Actions, Used ID, Full Name, Email, Group, Status header" time="8.305">
-        <system-out>
-            <![CDATA[Given user on the login page................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.963">
+    <testcase classname="User Story1 – As a Librarian, I should be able to manage Users:" name="User should be able to click on Add User button and add user" time="21.846">
+        <system-out><![CDATA[Given user on the login page................................................passed
 And user logs in as a "librarian"...........................................passed
 Given librarian user click on User button on the header.....................passed
-Then librarian user click on User button on the header......................passed
-And User should be able to see the grid with elements below.................passed
-]]>
-        </system-out>
+And librarian user clicks on add user button................................passed
+Then librarian will add a new user and save it..............................passed
+]]></system-out>
     </testcase>
 </testsuite>
