@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6276089400,
+              "duration": 9062796800,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 429835900,
+              "duration": 507132100,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 929070800,
+              "duration": 1590404000,
               "status": "passed"
             },
             "line": 7,
@@ -54,69 +54,37 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T05:28:56.305Z",
-        "line": 10,
-        "name": "User should be able to see the grid with Actions, Used ID, Full Name, Email, Group, Status header",
+        "start_timestamp": "2020-11-03T19:40:18.686Z",
+        "line": 22,
+        "name": "User should be able to click on Add User button and add user",
         "description": "",
-        "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:;user-should-be-able-to-see-the-grid-with-actions--used-id--full-name--email--group--status-header",
+        "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:;user-should-be-able-to-click-on-add-user-button-and-add-user",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 156517700,
+              "duration": 1395345600,
               "status": "passed"
             },
-            "line": 12,
-            "name": "librarian user click on User button on the header",
+            "line": 24,
+            "name": "librarian user clicks on add user button",
             "match": {
-              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClickOnUserButtonOnTheHeader()"
+              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClicksOnAddUserButton()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 373137600,
+              "duration": 8978228500,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User should be able to see the grid with elements below",
+            "line": 25,
+            "name": "librarian will add a new user and save it",
             "match": {
-              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.userShouldBeAbleToSeeTheGridWithElementsBelow(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianWillAddANewUserAndSaveIt()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Actions"
-                ]
-              },
-              {
-                "cells": [
-                  "User ID"
-                ]
-              },
-              {
-                "cells": [
-                  "Full Name"
-                ]
-              },
-              {
-                "cells": [
-                  "Email"
-                ]
-              },
-              {
-                "cells": [
-                  "Group"
-                ]
-              },
-              {
-                "cells": [
-                  "Status"
-                ]
-              }
-            ],
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -124,7 +92,7 @@
             "name": "@libraryUserStory1"
           },
           {
-            "name": "@userStory1Ac1"
+            "name": "@userStory1Ac2"
           }
         ]
       }
