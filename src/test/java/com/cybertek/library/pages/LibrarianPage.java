@@ -9,23 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LibrarianPage extends BasePage{
+public class LibrarianPage extends BasePage {
 
-    public LibrarianPage(){
+    public LibrarianPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//th[@data-name]")
-    private List<WebElement> headerElements;
 
-    public void headerElementsVerification(List<String> dataTable) {
 
-        List<String> headerElementsString = new ArrayList<>();
-        for (WebElement each : headerElements) {
-            headerElementsString.add(each.getText().trim());
-        }
-
-        Assert.assertEquals("Header verification failed", dataTable, headerElementsString);
-
-    }
 }
+
