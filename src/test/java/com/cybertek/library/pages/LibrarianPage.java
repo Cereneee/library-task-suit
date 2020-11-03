@@ -19,6 +19,7 @@ public class LibrarianPage extends BasePage{
     private List<WebElement> headerElements;
 
     public void headerElementsVerification(List<String> dataTable) {
+
         List<String> headerElementsString = new ArrayList<>();
         for (WebElement each : headerElements) {
             headerElementsString.add(each.getText().trim());
