@@ -18,12 +18,15 @@ public class LibrarianUserModuleDefinitions {
 
     @And("User should be able to see the grid with elements below")
     public void userShouldBeAbleToSeeTheGridWithElementsBelow(List<String> expected) {
-        System.out.println(expected);
+
+        System.out.println(expected.toString());
         librarianPage.headerElementsVerification(expected);
+
     }
 
     @And("librarian user clicks on add user button")
     public void librarianUserClicksOnAddUserButton() {
+
 
     }
 
