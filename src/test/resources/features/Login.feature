@@ -2,7 +2,7 @@
 Feature: As user I want to be able to login under different roles
 
   Background: common steps
-    Given I am on the login page
+    Given user on the login page
 #feature class
   @librarian
   Scenario: Login as a librarian
