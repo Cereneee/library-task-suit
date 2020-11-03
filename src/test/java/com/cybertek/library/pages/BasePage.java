@@ -27,6 +27,9 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[@id='navbarDropdown']/span")
     private WebElement accountUsername;
 
+    @FindBy(xpath = "//*[@id='books']/div[1]/div[1]/span/a")
+    private WebElement addBook;
+
 
 
     public String getPageTitleText() {
@@ -47,6 +50,9 @@ public abstract class BasePage {
         BrowserUtils.clickOnElement(accountUsername);
     }
 
+    public void addBooksButton(){
+        BrowserUtils.clickOnElement(addBook);
+    }
 
 
 }

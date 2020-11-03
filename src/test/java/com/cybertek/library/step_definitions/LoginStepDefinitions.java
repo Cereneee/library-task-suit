@@ -5,6 +5,7 @@ import com.cybertek.library.pages.LoginPage;
 import com.cybertek.library.utilities.BrowserUtils;
 import com.cybertek.library.utilities.ConfigurationReader;
 import com.cybertek.library.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,8 +21,8 @@ public class LoginStepDefinitions {
 
 
 
-    @Given("I am on the login page")
-    public void i_am_on_the_login_page() {
+    @Given("user on the login page")
+    public void user_on_the_login_page() {
         String url = ConfigurationReader.getProperty("LibraryURL");
         Driver.getDriver().get(url);
     }
@@ -64,4 +65,5 @@ public class LoginStepDefinitions {
 
         Driver.closeDriver();
     }
+
 }
