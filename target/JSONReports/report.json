@@ -4,40 +4,29 @@
     "elements": [
       {
         "line": 4,
-        "name": "common steps",
+        "name": "user is on login page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9951755100,
+              "duration": 6276089400,
               "status": "passed"
             },
             "line": 5,
-            "name": "I am on the login page",
+            "name": "user on the login page",
             "match": {
-              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.i_am_on_the_login_page()"
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_on_the_login_page()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-03T00:55:11.431Z",
-        "line": 8,
-        "name": "Login as a librarian",
-        "description": "",
-        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;login-as-a-librarian",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 624999600,
+              "duration": 429835900,
               "status": "passed"
             },
-            "line": 9,
+            "line": 6,
             "name": "user logs in as a \"librarian\"",
             "match": {
               "arguments": [
@@ -48,109 +37,106 @@
               ],
               "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2533733500,
+              "duration": 929070800,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Dashboard should be displayed",
+            "line": 7,
+            "name": "librarian user click on User button on the header",
             "match": {
-              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.Dashboard_should_be_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@librarian"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "common steps",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6029747700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I am on the login page",
-            "match": {
-              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.i_am_on_the_login_page()"
+              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClickOnUserButtonOnTheHeader()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-03T00:55:24.756Z",
-        "line": 13,
-        "name": "Login as a student",
+        "start_timestamp": "2020-11-03T05:28:56.305Z",
+        "line": 10,
+        "name": "User should be able to see the grid with Actions, Used ID, Full Name, Email, Group, Status header",
         "description": "",
-        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;login-as-a-student",
+        "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:;user-should-be-able-to-see-the-grid-with-actions--used-id--full-name--email--group--status-header",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 438904900,
+              "duration": 156517700,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user log in as a \"student\"",
+            "line": 12,
+            "name": "librarian user click on User button on the header",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"student\"",
-                  "offset": 17
-                }
-              ],
-              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_log_in_as_a(java.lang.String)"
+              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClickOnUserButtonOnTheHeader()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1663351100,
+              "duration": 373137600,
               "status": "passed"
             },
-            "line": 15,
-            "name": "Books should be displayed",
+            "line": 13,
+            "name": "User should be able to see the grid with elements below",
             "match": {
-              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.Books_should_be_displayed()"
+              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.userShouldBeAbleToSeeTheGridWithElementsBelow(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "keyword": "Then "
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "User ID"
+                ]
+              },
+              {
+                "cells": [
+                  "Full Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Email"
+                ]
+              },
+              {
+                "cells": [
+                  "Group"
+                ]
+              },
+              {
+                "cells": [
+                  "Status"
+                ]
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@libraryUserStory1"
           },
           {
-            "name": "@Student"
+            "name": "@userStory1Ac1"
           }
         ]
       }
     ],
-    "name": "As user I want to be able to login under different roles",
+    "name": "User Story1 – As a Librarian, I should be able to manage Users:",
     "description": "",
-    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
+    "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/LibrarianUserModule.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@libraryUserStory1",
         "type": "Tag",
         "location": {
           "line": 1,
