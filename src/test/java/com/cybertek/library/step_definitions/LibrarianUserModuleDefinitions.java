@@ -1,47 +1,36 @@
 package com.cybertek.library.step_definitions;
 
-import com.cybertek.library.pages.LibrarianPage;
-import com.cybertek.library.pages.LibrarianUserPage;
+import com.cybertek.library.pages.LibrarianBookPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.Map;
 
 public class LibrarianUserModuleDefinitions {
 
-
-    LibrarianUserPage librarianUserPage = new LibrarianUserPage();
+    LibrarianBookPage librarianPage = new LibrarianBookPage();
 
     @Then("librarian user click on User button on the header")
     public void librarianUserClickOnUserButtonOnTheHeader() {
-        librarianUserPage.usersPageLink();
+        librarianPage.usersPageLink();
     }
 
     @And("User should be able to see the grid with elements below")
     public void userShouldBeAbleToSeeTheGridWithElementsBelow(List<String> expected) {
 
         System.out.println(expected.toString());
-        librarianUserPage.headerElementsVerification(expected);
+        librarianPage.headerElementsVerification(expected);
 
     }
 
     @And("librarian user clicks on add user button")
     public void librarianUserClicksOnAddUserButton() {
-        librarianUserPage.addUserBtn();
+
 
     }
 
-
-
-//        librarianUserPage.fullNameInput("Agit A");
-//        librarianUserPage.passwordInput("asdasd");
-//        librarianUserPage.emailInput("asd@gmail.com");
-//        librarianUserPage.saveChages();
-
     @Then("librarian will add a new user and save it")
-    public void librarianWillAddANewUserAndSaveIt(Map <String, String> info) {
+    public void librarianWillAddANewUserAndSaveIt() {
 
     }
 
