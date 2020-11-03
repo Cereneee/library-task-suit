@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LibrarianPage extends BasePage{
+public class LibrarianBookPage extends BasePage{
 
-    public LibrarianPage(){
+    public LibrarianBookPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
