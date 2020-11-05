@@ -3,6 +3,7 @@ Feature: As user I want to be able to login under different roles
 
   Background: common steps
     Given user on the login page
+
 #feature class
   @librarian
   Scenario: Login as a librarian
@@ -13,4 +14,5 @@ Feature: As user I want to be able to login under different roles
   Scenario: Login as a student
     When user log in as a "student"
     Then Books should be displayed
+
 

@@ -19,8 +19,6 @@ public class LoginStepDefinitions {
 
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
-
-
     @Given("user on the login page")
     public void user_on_the_login_page() {
         String url = ConfigurationReader.getProperty("LibraryURL");
