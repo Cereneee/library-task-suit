@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9062796800,
+              "duration": 6052832400,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 507132100,
+              "duration": 269024800,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 1590404000,
+              "duration": 785060900,
               "status": "passed"
             },
             "line": 7,
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T19:40:18.686Z",
+        "start_timestamp": "2020-11-06T07:03:46.005Z",
         "line": 22,
         "name": "User should be able to click on Add User button and add user",
         "description": "",
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1395345600,
+              "duration": 1002000,
               "status": "passed"
             },
             "line": 24,
@@ -76,7 +76,6 @@
           },
           {
             "result": {
-              "duration": 8978228500,
               "status": "passed"
             },
             "line": 25,
@@ -101,7 +100,7 @@
     "description": "",
     "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LibrarianUserModule.feature",
+    "uri": "file:src/test/resources/features/Users/LibrarianUserModule_murat.feature",
     "tags": [
       {
         "name": "@libraryUserStory1",
