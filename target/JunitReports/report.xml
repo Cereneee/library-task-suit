@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.572">
-    <testcase classname="User Story1 – As a Librarian, I should be able to manage Users:" name="User should be able to click on Add User button and add user" time="7.227">
-        <system-out>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.949">
+    <testcase classname="A description" name="Book module grid" time="0.178">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
             <![CDATA[Given user on the login page................................................passed
 And user logs in as a "librarian"...........................................passed
-Given librarian user click on User button on the header.....................passed
-And librarian user clicks on add user button................................passed
-Then librarian will add a new user and save it..............................passed
+Then user navigate to "Book" module and click on it.........................undefined
+Then user should see grid with following "Elements".........................skipped
 ]]>
-        </system-out>
+        </failure>
+    </testcase>
+    <testcase classname="A description" name="Creating a book" time="0.025">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given user on the login page................................................passed
+And user logs in as a "librarian"...........................................passed
+When user navigate to "Book" module and click on it.........................undefined
+Then user should see Add Book button and click on it........................skipped
+And user should fill up required fields and save changes....................skipped
+]]>
+        </failure>
     </testcase>
 </testsuite>

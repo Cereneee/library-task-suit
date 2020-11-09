@@ -1,14 +1,14 @@
 # new feature
 # Tags: optional
-
+@book
 Feature: A description
 
   Background: user is on login page
-    Given user is on library login page
+    Given user on the login page
     And user logs in as a "librarian"
 
   Scenario: Book module grid
-    Then user navigate to "Book" module and click on it
+    When user navigate to "Book" module and click on it
     Then user should see grid with following "Elements"
       | Actions     |
       | ISBN        |

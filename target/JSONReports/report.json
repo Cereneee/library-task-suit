@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 4,
     "elements": [
       {
-        "line": 4,
+        "line": 6,
         "name": "user is on login page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6052832400,
+              "duration": 6000500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "user on the login page",
             "match": {
               "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_on_the_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 269024800,
+              "duration": 998100,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "user logs in as a \"librarian\"",
             "match": {
               "arguments": [
@@ -38,75 +38,175 @@
               "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 785060900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "librarian user click on User button on the header",
-            "match": {
-              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClickOnUserButtonOnTheHeader()"
-            },
-            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-06T07:03:46.005Z",
-        "line": 22,
-        "name": "User should be able to click on Add User button and add user",
+        "start_timestamp": "2020-11-08T23:27:26.229Z",
+        "line": 10,
+        "name": "Book module grid",
         "description": "",
-        "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:;user-should-be-able-to-click-on-add-user-button-and-add-user",
+        "id": "a-description;book-module-grid",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1002000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 24,
-            "name": "librarian user clicks on add user button",
-            "match": {
-              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianUserClicksOnAddUserButton()"
-            },
-            "keyword": "And "
+            "line": 11,
+            "name": "user navigate to \"Book\" module and click on it",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 3000800,
+              "status": "skipped"
             },
-            "line": 25,
-            "name": "librarian will add a new user and save it",
-            "match": {
-              "location": "com.cybertek.library.step_definitions.LibrarianUserModuleDefinitions.librarianWillAddANewUserAndSaveIt()"
-            },
+            "line": 12,
+            "name": "user should see grid with following \"Elements\"",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN"
+                ]
+              },
+              {
+                "cells": [
+                  "Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Author"
+                ]
+              },
+              {
+                "cells": [
+                  "Category"
+                ]
+              },
+              {
+                "cells": [
+                  "Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed By"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@libraryUserStory1"
+            "name": "@book"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "user is on login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 998900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_on_the_login_page()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@userStory1Ac2"
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user logs in as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T23:27:26.484Z",
+        "line": 21,
+        "name": "Creating a book",
+        "description": "",
+        "id": "a-description;creating-a-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "user navigate to \"Book\" module and click on it",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000600,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user should see Add Book button and click on it",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user should fill up required fields and save changes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@book"
           }
         ]
       }
     ],
-    "name": "User Story1 – As a Librarian, I should be able to manage Users:",
+    "name": "A description",
     "description": "",
-    "id": "user-story1-–-as-a-librarian--i-should-be-able-to-manage-users:",
+    "id": "a-description",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Users/LibrarianUserModule_murat.feature",
+    "uri": "file:src/test/resources/features/Users/LibrarianBookModule_muha.feature",
     "tags": [
       {
-        "name": "@libraryUserStory1",
+        "name": "@book",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 3,
           "column": 1
         }
       }

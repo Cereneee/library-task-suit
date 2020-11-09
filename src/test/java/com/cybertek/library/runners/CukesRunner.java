@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/HtmlReports","html:target/cucumber-report.html"},
         features = "src/test/resources/features",
         glue = "com/cybertek/library/step_definitions",
-        dryRun = false,
-        tags = "@userStory1Ac2"
+        dryRun = true,
+        tags = "@book"
 
 )
 
